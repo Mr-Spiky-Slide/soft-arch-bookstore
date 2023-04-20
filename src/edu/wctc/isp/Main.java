@@ -3,6 +3,8 @@ package edu.wctc.isp;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 
@@ -21,6 +23,13 @@ public class Main {
                 13.54, 18,
                 LocalDate.of(2011, Month.APRIL, 12),
                 "Miles Davis", Duration.ofMinutes(46));
+
+        List<Product> productList = new ArrayList<>();
+        productList.add(book1);
+        productList.add(book2);
+        productList.add(record);
+
+        System.out.println(productList);
 
         System.out.println(book1.toString());
         System.out.println("\n");
